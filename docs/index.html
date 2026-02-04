@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shiphook — Coming Soon</title>
+  <meta name="description" content="Shiphook helps local businesses reach cruise passengers the moment they dock in New Zealand ports." />
+  <style>
+    :root {
+      color-scheme: only light;
+      --ink: #0f172a;
+      --muted: #475569;
+      --bg: #f8fafc;
+      --accent: #0ea5a4;
+      --accent-dark: #0f766e;
+      --card: #ffffff;
+      --border: #e2e8f0;
+      font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #e2f6f6 0%, #f8fafc 55%, #ffffff 100%);
+      color: var(--ink);
+    }
+    .wrap {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 48px 20px;
+    }
+    .card {
+      width: min(720px, 100%);
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 36px 32px 32px;
+      box-shadow: 0 24px 80px rgba(15, 23, 42, 0.12);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(14, 165, 164, 0.25);
+      background: rgba(14, 165, 164, 0.08);
+      color: var(--accent-dark);
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    h1 {
+      margin: 20px 0 12px;
+      font-size: clamp(2rem, 1.6rem + 2vw, 3rem);
+      line-height: 1.1;
+    }
+    p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    ul {
+      margin: 0 0 24px 18px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: 1px solid var(--accent);
+      color: #ffffff;
+      background: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 120ms ease, box-shadow 120ms ease;
+    }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 10px 25px rgba(14, 165, 164, 0.25); }
+    .ghost {
+      background: transparent;
+      color: var(--accent-dark);
+      border-color: rgba(14, 165, 164, 0.35);
+    }
+    footer {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--accent-dark); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <span class="badge">Coming soon</span>
+      <h1>Reach cruise passengers the moment they dock.</h1>
+      <p>Shiphook helps local businesses show the right offer to visitors as cruise ships arrive in New Zealand ports.</p>
+      <ul>
+        <li>Geo-targeted campaigns for waterfront retailers, tour operators, and hospitality venues.</li>
+        <li>Automatic timing so your message appears at the moment passengers disembark.</li>
+        <li>Launching soon for Auckland, Tauranga, Napier, Wellington, Akaroa, Lyttelton, Dunedin, and the Bay of Islands.</li>
+      </ul>
+      <p>Interested in early access? Contact <strong>hello@shiphook.co.nz</strong>.</p>
+      <div class="actions">
+        <a class="btn" href="mailto:hello@shiphook.co.nz">Request early access</a>
+        <a class="btn ghost" href="/privacy/">Privacy policy</a>
+      </div>
+      <footer>© 2026 Bruning LTD · <a href="/privacy/">Privacy policy</a></footer>
+    </section>
+  </main>
+</body>
+</html>
